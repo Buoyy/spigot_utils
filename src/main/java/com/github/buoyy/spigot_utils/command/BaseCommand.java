@@ -33,7 +33,7 @@ public abstract class BaseCommand implements SimpleCommand
 
     /**
      * The method to run when this base command is provided no arguments.
-     * @param sender
+     * @param sender - The command sender for this command
      */
     public abstract void onNoArgs(CommandSender sender);
 

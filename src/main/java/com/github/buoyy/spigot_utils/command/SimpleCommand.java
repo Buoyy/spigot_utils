@@ -17,8 +17,10 @@ public interface SimpleCommand
     void execute(CommandSender sender, String[] args);
 
     /**
-     * The tab completions to be provided for this command
+     * The tab completions to be provided for this command.
+     * Return {@link List#of()} for no completions.
      * @param args - Arguments provided to the command
+     * @return The tab completions to be providedd for this command
      */
     List<String> getTabs(String[] args);
 }
